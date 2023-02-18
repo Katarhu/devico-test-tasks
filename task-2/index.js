@@ -39,7 +39,7 @@ const d = {
             right: 1,
         },
     },
-    right: 5,
+    right: 0,
 };
 
 foo(d);

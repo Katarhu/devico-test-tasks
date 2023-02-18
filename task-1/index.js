@@ -6,22 +6,19 @@ const OPERATORS = {
     DIVIDE: "/",
 }
 
+const isValidNumber = (number) => typeof number === "number" && Number.isFinite(number);
+
 const createCalc = (initialValue = 0) => {
-    let accumulation = typeof initialValue === 'number' ? initialValue : 0;
+    let accumulation = isValidNumber(initialValue) ? initialValue : 0;
 
     return (value, operator) => {
-        if (typeof value !== "number") {
-            console.log(`value should be number, ${typeof value} given`);
+        if (!isValidNumber(value)) {
+            console.log(`Value should be a valid number`);
             return;
         }
 
         if (!Object.values(OPERATORS).includes(operator)) {
             console.log(`There is no accepted operator as ${operator}`);
-            return;
-        }
-
-        if (isNaN(value)) {
-            console.log(`Invalid value, accumulation: ${accumulation}`);
             return;
         }
 

@@ -70,6 +70,6 @@ console.log(worker.getSalary()); // 310
 worker.setRate(20);
 worker.setDays(10);
 
-console.log(worker.getRate()); //20
-console.log(worker.getDays()); // 10
-console.log(worker.getSalary()); // 200
+// console.log(worker.getRate()); //20
+// console.log(worker.getDays()); // 10
+// console.log(worker.getSalary()); // 200

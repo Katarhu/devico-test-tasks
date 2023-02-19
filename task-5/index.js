@@ -58,6 +58,7 @@ class Worker {
      */
     setDays(days) {
         this.#days = days;
+        return this;
     }
 }
 

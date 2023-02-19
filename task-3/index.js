@@ -47,8 +47,8 @@ const bar = (n) => {
 // console.log(bar(8));
 // console.log(bar(7));
 // console.log(bar(6));
-// console.log(bar(5));
-// console.log(bar(4));
-console.log(bar(3));
+console.log(bar(5));
+console.log(bar(4));
+// console.log(bar(3));
 // console.log(bar(2));
 // console.log(bar(1));

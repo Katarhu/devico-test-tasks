@@ -39,8 +39,8 @@ const d = {
             right: 1,
         },
     },
-    right: 0,
-};
+    right: 1,
+}
 
 foo(d);
 console.log(d);
